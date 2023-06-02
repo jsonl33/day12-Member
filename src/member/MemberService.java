@@ -18,5 +18,17 @@ public class MemberService {
 		
 		memberMap.put(userId, userPwd);
 		return memberMap;
+	
 	}
+	
+	public HashMap<String, String> remove(Scanner input){
+		System.out.print("삭제할 ID 입력 : ");
+		String removeId = input.next();
+		memberMap.remove(removeId);
+		System.out.println("삭제되었습니다");
+		
+		return memberMap;
+	}
+	
+	
 }

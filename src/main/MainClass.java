@@ -33,11 +33,11 @@ public class MainClass {
 					String key = keyIter.next();
 					String value = memberMap.get(key);
 					
-					System.out.println("아이디: "+key+"\t"+"비밀번호: "+value+"\n\n");
+					System.out.println("아이디: "+key+"\t"+"비밀번호: "+value+"\n");
 				}
 				break;
 			case 3: 
-				
+					memberService.remove(input);
 				break;
 			case 4: 
 				System.out.println("시스템을 종료합니다");	
